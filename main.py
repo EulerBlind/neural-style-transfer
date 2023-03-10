@@ -135,6 +135,7 @@ if __name__ == '__main__':
     # 定义自己的层，这里完全是根据自己认定来判别的
     content_layers = ['conv_4']
     style_layers = ['conv_1', 'conv_2', 'conv_3', 'conv_4', 'conv_5']
+    # 这里使用content_image作为输入与使用相同大小的图片输入有不一样的效果哦
     input_img = content_image.clone()
     # input_img = torch.rand(content_image.shape, device=device, requires_grad=True)
 
